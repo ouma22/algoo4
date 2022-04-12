@@ -1,0 +1,21 @@
+ALGORITHM insertion
+VAR
+    tab : ARRAY_OF INTEGER;
+    i:INTEGER
+    n:INTEGER
+    j:INTEGER
+BEGIN
+
+Read (n)
+Read (tab[0])
+    FOR i FROM 1 TO n STEP 1  DO
+        Read ( tab [i] )
+        FOR j FROM i-1 TO 0 STEP -1  DO
+            IF (tab[i]<tab[j]) THEN
+                swap(tab[i],tab[j])
+            END_IF
+        END_FOR
+    END_FOR
+write (tab)
+
+END
